@@ -3,90 +3,139 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>אוגוסטין | Augustine – מסעדת ביסטרו נקייה ומודרנית</title>
-  <meta name="description" content="אוגוסטין – ביסטרו עכשווי עם תפריט עונתי, חומרי גלם טריים, ואווירה נעימה." />
+  <meta name="theme-color" content="#111" />
+  <title>אוגוסטין | Augustine – צבעוני, נקי, חדשני</title>
+  <meta name="description" content="אוגוסטין – ביסטרו עכשווי, עיצוב צבעוני ונקי, תפריט עונתי וחוויית אירוח מדויקת." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <div class="brand">
+  <header class="site-header" id="top">
+    <div class="nav-bar container">
+      <a class="brand" href="#top" aria-label="אוגוסטין Augustine">
         <span class="logo">A</span>
-        <div class="titles">
-          <h1 class="site-title">אוגוסטין</h1>
-          <p class="subtitle">Augustine – Bistro & Wine</p>
-        </div>
-      </div>
-      <nav class="nav">
+        <span class="brand-text">אוגוסטין</span>
+      </a>
+      <button class="hamburger" aria-label="תפריט" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="ניווט ראשי">
         <a href="#about">עלינו</a>
         <a href="#menu">תפריט</a>
-        <a href="#visit">איך מגיעים</a>
-        <a href="#reserve" class="btn primary">הזמנת מקום</a>
+        <a href="#visit">מיקום</a>
+        <a href="#reserve" class="btn primary">הזמנה</a>
       </nav>
-      <div class="hero-copy">
-        <h2>ביסטרו עונתי נקי ומדויק</h2>
-        <p>מטבח מקומי, טעמים אירופאים, יין טוב. כל מה שצריך לערב נכון.</p>
-        <div class="cta-group">
-          <a id="reserve" href="#" class="btn primary">הזמנת מקום</a>
-          <a href="#menu" class="btn ghost">ראו תפריט</a>
-        </div>
-      </div>
     </div>
   </header>
 
+  <section class="hero" aria-label="פתיח">
+    <div class="bg-blobs" aria-hidden="true">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="blob b3"></span>
+    </div>
+    <div class="container hero-inner">
+      <h1 class="huge">ביסטרו צבעוני ונקי<br> שמרגיש חדש</h1>
+      <p class="lead">טעמים עונתיים, יין מצוין, וחוויה מדויקת שמחליקה במורד הדף – כמו באתר של Apple.</p>
+      <div class="cta-group">
+        <a href="#reserve" class="btn primary">הזמנת מקום</a>
+        <a href="#menu" class="btn ghost">תפריט</a>
+      </div>
+    </div>
+    <div class="divider gradient" aria-hidden="true"></div>
+  </section>
+
   <main>
-    <section id="about" class="section about">
-      <div class="container narrow">
-        <h3>קצת על אוגוסטין</h3>
-        <p>
-          אוגוסטין היא מסעדת ביסטרו עכשווית: חומרי גלם טריים, כבוד לטעם, ושירות שמרגיש נכון.
-          התפריט משתנה עם העונות ומבוסס על מצרכים מקומיים.
-        </p>
-      </div>
-    </section>
-
-    <section id="menu" class="section menu">
-      <div class="container">
-        <h3>טעימה מהתפריט</h3>
-        <div class="cards">
-          <article class="card">
-            <h4>סלט קיץ</h4>
-            <p>עגבניות עונה, זיתי קלמטה, גבינת עיזים, ויניגרט בזיליקום.</p>
-          </article>
-          <article class="card">
-            <h4>ריזוטו אספרגוס</h4>
-            <p>פרמז׳ן מיושן, לימון כבוש, שמן זית כתית מעולה.</p>
-          </article>
-          <article class="card">
-            <h4>דג היום</h4>
-            <p>על הפלנצ׳ה, ירוקים צלויים, חמאה חומה, קפריס.</p>
-          </article>
-        </div>
-        <p class="note">שימו לב: זהו תפריט לדוגמה. נעדכן לאחר קבלת פרטים מלאים.</p>
-      </div>
-    </section>
-
-    <section id="visit" class="section visit">
+    <section id="about" class="section about snap">
       <div class="container two-col">
         <div>
-          <h3>שעות וכתובת</h3>
+          <h2 class="section-title">על אוגוסטין</h2>
+          <p class="big">
+            אוגוסטין הוא ביסטרו מודרני: חומרי גלם טריים, עיצוב נקי וצבעוני,
+            וטכניקה שמכבדת את הטעם. התפריט משתנה עם העונות ומבוסס על מצרכים מקומיים.
+          </p>
+          <ul class="bullets">
+            <li>חומרי גלם טריים ומקומיים</li>
+            <li>יין נבחר ותפריט מתעדכן</li>
+            <li>שירות מדויק, אווירה נינוחה</li>
+          </ul>
+        </div>
+        <div class="panel promo">
+          <h3>ערב טעימות</h3>
+          <p>תפריט טעימות עונתי – חוויה בת 6 מנות.</p>
+          <a href="#reserve" class="btn primary">שריינו מקום</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu snap">
+      <div class="container">
+        <h2 class="section-title">תפריט</h2>
+        <div class="tabs" role="tablist">
+          <button role="tab" aria-selected="true" data-tab="starters">פתיחות</button>
+          <button role="tab" aria-selected="false" data-tab="mains">עיקריות</button>
+          <button role="tab" aria-selected="false" data-tab="desserts">קינוחים</button>
+          <button role="tab" aria-selected="false" data-tab="drinks">קוקטיילים & יין</button>
+        </div>
+        <div class="tab-panels">
+          <div class="tab-panel" id="tab-starters" role="tabpanel">
+            <div class="menu-grid">
+              <div class="menu-item"><h4>סלט קיץ</h4><span class="price">48</span><p>עגבניות עונה · זיתי קלמטה · גבינת עיזים · בזיליקום</p></div>
+              <div class="menu-item"><h4>קרודו דג</h4><span class="price">56</span><p>שמן זית עדין · לימון כבוש · צ׳ילי</p></div>
+              <div class="menu-item"><h4>פריקי כרובית</h4><span class="price">42</span><p>טחינה ירוקה · שקדים קלויים</p></div>
+            </div>
+          </div>
+          <div class="tab-panel hidden" id="tab-mains" role="tabpanel">
+            <div class="menu-grid">
+              <div class="menu-item"><h4>ריזוטו אספרגוס</h4><span class="price">78</span><p>פרמז׳ן מיושן · לימון כבוש · שמן זית</p></div>
+              <div class="menu-item"><h4>דג היום</h4><span class="price">96</span><p>פלנצ׳ה · ירוקים צלויים · חמאה חומה</p></div>
+              <div class="menu-item"><h4>סטייק אנטריקוט</h4><span class="price">128</span><p>רוטב יין אדום · תפוחי אדמה פרובנסל</p></div>
+            </div>
+          </div>
+          <div class="tab-panel hidden" id="tab-desserts" role="tabpanel">
+            <div class="menu-grid">
+              <div class="menu-item"><h4>פבלובה</h4><span class="price">38</span><p>קרם מסקרפונה · פירות טריים</p></div>
+              <div class="menu-item"><h4>שוקולד מריר 70%</h4><span class="price">36</span><p>קרמל מלוח · שקדים</p></div>
+            </div>
+          </div>
+          <div class="tab-panel hidden" id="tab-drinks" role="tabpanel">
+            <div class="menu-grid">
+              <div class="menu-item"><h4>נגרוני סיסיליאני</h4><span class="price">44</span><p>ביטר · אפרול · הדרים</p></div>
+              <div class="menu-item"><h4>כוס יין הבית</h4><span class="price">36</span><p>לבן/אדום מתחלף</p></div>
+            </div>
+          </div>
+        </div>
+        <p class="note">תפריט משתנה לפי עונות. המחירים להמחשה.</p>
+      </div>
+    </section>
+
+    <section id="visit" class="section visit snap">
+      <div class="container two-col">
+        <div>
+          <h2 class="section-title">מגיעים אלינו</h2>
           <ul class="details">
             <li><strong>שעות:</strong> א׳–ה׳ 18:00–23:00 · ו׳–ש׳ 12:00–23:30</li>
             <li><strong>כתובת:</strong> יתעדכן · עיר</li>
             <li><strong>טלפון:</strong> יתעדכן</li>
           </ul>
           <div class="cta-group">
-            <a href="#" class="btn primary">שיחה להזמנה</a>
+            <a href="#reserve" class="btn primary">הזמנה מהירה</a>
             <a href="#" class="btn ghost">נווט עם Google Maps</a>
           </div>
         </div>
         <div class="map">
-          <div class="map-embed">
-            <p>מפה תופיע כאן לאחר שנקבל כתובת.</p>
-          </div>
+          <div class="map-embed"><p>מפה תוצג לאחר שנקבל כתובת.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserve" class="section reserve snap">
+      <div class="container callout">
+        <h2 class="section-title">להזמנת מקום</h2>
+        <p class="big">לחצו להזמנה בווטסאפ או התקשרו – ונשמור לכם שולחן.</p>
+        <div class="cta-group">
+          <a href="#" class="btn primary">ווטסאפ</a>
+          <a href="#" class="btn ghost">טלפון</a>
         </div>
       </div>
     </section>
@@ -103,8 +152,44 @@
     </div>
   </footer>
 
+  <button class="to-top" aria-label="חזרה לראש הדף">↑</button>
+
   <script>
+    // שנת זכויות
     document.getElementById('year').textContent = new Date().getFullYear();
+    // גלילה חלקה
+    document.documentElement.style.scrollBehavior = 'smooth';
+    // נב ברקע זכוכית בש_scroll
+    const header = document.querySelector('.site-header');
+    const toTop = document.querySelector('.to-top');
+    const onScroll = () => {
+      const y = window.scrollY;
+      header.classList.toggle('scrolled', y > 12);
+      toTop.classList.toggle('show', y > 320);
+    };
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+    // המבורגר במובייל
+    const burger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+    burger.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open);
+    });
+    // טאבים של תפריט
+    const tabBtns = document.querySelectorAll('.tabs [role="tab"]');
+    const panels = document.querySelectorAll('.tab-panel');
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.setAttribute('aria-selected', 'false'));
+        btn.setAttribute('aria-selected', 'true');
+        panels.forEach(p => p.classList.add('hidden'));
+        const id = btn.dataset.tab;
+        document.getElementById('tab-' + id).classList.remove('hidden');
+      });
+    });
+    // חזרה לראש הדף
+    toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   </script>
 </body>
 </html>

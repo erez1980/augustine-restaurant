@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>אוגוסטין | Augustine – מסעדת ביסטרו נקייה ומודרנית</title>
+  <meta name="description" content="אוגוסטין – ביסטרו עכשווי עם תפריט עונתי, חומרי גלם טריים, ואווירה נעימה." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="brand">
+        <span class="logo">A</span>
+        <div class="titles">
+          <h1 class="site-title">אוגוסטין</h1>
+          <p class="subtitle">Augustine – Bistro & Wine</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">עלינו</a>
+        <a href="#menu">תפריט</a>
+        <a href="#visit">איך מגיעים</a>
+        <a href="#reserve" class="btn primary">הזמנת מקום</a>
+      </nav>
+      <div class="hero-copy">
+        <h2>ביסטרו עונתי נקי ומדויק</h2>
+        <p>מטבח מקומי, טעמים אירופאים, יין טוב. כל מה שצריך לערב נכון.</p>
+        <div class="cta-group">
+          <a id="reserve" href="#" class="btn primary">הזמנת מקום</a>
+          <a href="#menu" class="btn ghost">ראו תפריט</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section about">
+      <div class="container narrow">
+        <h3>קצת על אוגוסטין</h3>
+        <p>
+          אוגוסטין היא מסעדת ביסטרו עכשווית: חומרי גלם טריים, כבוד לטעם, ושירות שמרגיש נכון.
+          התפריט משתנה עם העונות ומבוסס על מצרכים מקומיים.
+        </p>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu">
+      <div class="container">
+        <h3>טעימה מהתפריט</h3>
+        <div class="cards">
+          <article class="card">
+            <h4>סלט קיץ</h4>
+            <p>עגבניות עונה, זיתי קלמטה, גבינת עיזים, ויניגרט בזיליקום.</p>
+          </article>
+          <article class="card">
+            <h4>ריזוטו אספרגוס</h4>
+            <p>פרמז׳ן מיושן, לימון כבוש, שמן זית כתית מעולה.</p>
+          </article>
+          <article class="card">
+            <h4>דג היום</h4>
+            <p>על הפלנצ׳ה, ירוקים צלויים, חמאה חומה, קפריס.</p>
+          </article>
+        </div>
+        <p class="note">שימו לב: זהו תפריט לדוגמה. נעדכן לאחר קבלת פרטים מלאים.</p>
+      </div>
+    </section>
+
+    <section id="visit" class="section visit">
+      <div class="container two-col">
+        <div>
+          <h3>שעות וכתובת</h3>
+          <ul class="details">
+            <li><strong>שעות:</strong> א׳–ה׳ 18:00–23:00 · ו׳–ש׳ 12:00–23:30</li>
+            <li><strong>כתובת:</strong> יתעדכן · עיר</li>
+            <li><strong>טלפון:</strong> יתעדכן</li>
+          </ul>
+          <div class="cta-group">
+            <a href="#" class="btn primary">שיחה להזמנה</a>
+            <a href="#" class="btn ghost">נווט עם Google Maps</a>
+          </div>
+        </div>
+        <div class="map">
+          <div class="map-embed">
+            <p>מפה תופיע כאן לאחר שנקבל כתובת.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> Augustine · כל הזכויות שמורות</small>
+      <nav class="footer-nav">
+        <a href="#about">עלינו</a>
+        <a href="#menu">תפריט</a>
+        <a href="#reserve">הזמנה</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
